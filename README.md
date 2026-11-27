@@ -219,3 +219,5 @@ Automated checks and browser/API verification were run during development, inclu
 the two-account real-time scenario and a test suite against a real SQLite database.
 The candidate must still review and understand the code and decisions before
 submission, and be ready to explain and modify them in the technical interview.
+#   p r o j e c t - c i r a n t a  
+ 
