@@ -1,0 +1,18 @@
+﻿Welcome to Project Pulse â€” a modern, real-time collaborative project management platform built for fast-moving teams.
+Managing tasks across spreadsheets and scattered chats slows teams down.
+Project Pulse brings planning, task tracking, live collaboration, and analytics together in one clean workspace.
+Starting from the workspace hub, you get an immediate overview of all your active projects and total task counts, alongside your overall completion rate and any overdue items.
+The collapsible sidebar keeps navigation effortless, letting you jump between projects or collapse the rail for maximum focus.
+Inside a project, everything is organized into three focused views: the Kanban Board, the Analytics Dashboard, and Team Members.
+The interactive Kanban board organizes work across To Do, In Progress, and Done columns.
+Teams can instantly search tasks by title or filter by status, priority, and assignee.
+Clicking any card opens the task detail modal, where teammates can update details, discuss work in threaded comments, and inspect the complete chronological activity history.
+The Analytics Dashboard turns live project data into clear visual insights â€” tracking completion progress, status and priority distribution, per-member workload, and recent team activity.
+Let's walk through a real workflow. We'll create a new high-priority task, assign it to a teammate, and set a target due date.
+Submitting the form validates the input on the server, saves it to the database, and updates the board immediately.
+Next, dragging the card from To Do to In Progress triggers an optimistic UI update while persisting the new status and position via a PATCH API request, and broadcasting the move in real time over Socket.IO.
+Teammates can comment directly on the task, and every change is logged automatically. Meanwhile, role-based permissions ensure only project owners can manage team membership or project settings.
+Under the hood, Project Pulse is built with Next.js 15 App Router, React 19, TypeScript, and Tailwind CSS on the frontend, paired with dnd-kit for drag-and-drop and Recharts for live data visualization.
+On the backend, Next.js API routes validate requests with Zod, enforce role-based access with signed JWT session cookies, and persist data through Prisma ORM and SQLite, while a custom Socket.IO server broadcasts every update to authorized project rooms.
+With real-time collaboration, intuitive Kanban workflows, role-based security, and live analytics, Project Pulse helps teams stay aligned from kickoff to launch.
+Thank you for watching this demonstration of Project Pulse.
